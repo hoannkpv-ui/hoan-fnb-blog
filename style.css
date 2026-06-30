@@ -1,0 +1,108 @@
+:root {
+  --bg: #faf7f2;
+  --ink: #2b2420;
+  --accent: #c0392b;
+  --muted: #7a6f63;
+  --card: #ffffff;
+  --border: #e7ded3;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.7;
+}
+header.site {
+  padding: 48px 20px 32px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+header.site h1 {
+  margin: 0 0 8px;
+  font-size: 1.9rem;
+}
+header.site p {
+  margin: 0;
+  color: var(--muted);
+}
+main {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 32px 20px 80px;
+}
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.post-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 22px 24px;
+  text-decoration: none;
+  color: var(--ink);
+  display: block;
+  transition: box-shadow .15s ease, transform .15s ease;
+}
+.post-card:hover {
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transform: translateY(-1px);
+}
+.post-card .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.post-card h2 {
+  margin: 0 0 6px;
+  font-size: 1.2rem;
+}
+.post-card .pain {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+article.post h1 {
+  font-size: 1.7rem;
+  margin-bottom: 4px;
+}
+article.post .pain-box {
+  background: #fff3ee;
+  border-left: 3px solid var(--accent);
+  padding: 12px 16px;
+  margin: 18px 0 28px;
+  font-size: 0.95rem;
+  color: #6b3a30;
+}
+article.post h2 {
+  font-size: 1.25rem;
+  margin-top: 32px;
+}
+article.post .cta {
+  margin-top: 36px;
+  padding: 20px;
+  background: #2b2420;
+  color: #fff;
+  border-radius: 10px;
+}
+article.post .cta strong { color: #f0c419; }
+.back-link {
+  display: inline-block;
+  margin-bottom: 24px;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+footer.site {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  padding: 30px 20px;
+}

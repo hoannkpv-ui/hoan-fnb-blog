@@ -106,3 +106,40 @@ footer.site {
   font-size: 0.85rem;
   padding: 30px 20px;
 }
+
+/* --- Thanh menu điều hướng --- */
+.site-nav {
+  margin-top: 18px;
+  display: flex;
+  gap: 22px;
+  justify-content: center;
+}
+.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+  transition: color .15s ease, border-color .15s ease;
+}
+.site-nav a:hover,
+.site-nav a.dang-o {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* --- Trang giới thiệu (About) --- */
+article.about ul {
+  padding-left: 20px;
+  margin: 18px 0;
+}
+article.about ul li { margin-bottom: 8px; }
+article.about blockquote {
+  border-left: 3px solid var(--accent);
+  margin: 28px 0;
+  padding: 8px 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--ink);
+}

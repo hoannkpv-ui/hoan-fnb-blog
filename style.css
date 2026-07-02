@@ -136,8 +136,10 @@ footer.site {
 }
 .anh-chan-dung img {
   width: 100%;
-  max-width: 560px;
-  height: auto;
+  max-width: 460px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  object-position: center 40%;
   border-radius: 12px;
   border: 1px solid var(--border);
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);

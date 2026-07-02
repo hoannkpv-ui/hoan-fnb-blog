@@ -155,6 +155,136 @@ article.about ul {
   margin: 18px 0;
 }
 article.about ul li { margin-bottom: 8px; }
+
+/* ================= SALE PAGE ================= */
+.sale-hero {
+  text-align: center;
+  padding: 20px 0 36px;
+  border-bottom: 1px solid var(--border);
+}
+.sale-hero .tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.sale-hero h1 {
+  font-size: 2rem;
+  line-height: 1.25;
+  margin: 0 0 14px;
+}
+.sale-hero .sub {
+  font-size: 1.1rem;
+  color: var(--muted);
+  max-width: 620px;
+  margin: 0 auto 24px;
+}
+.hero-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 12px;
+}
+
+.btn-buy {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.05rem;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(192,57,43,0.28);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.btn-buy:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(192,57,43,0.35); }
+.btn-buy.big { font-size: 1.2rem; padding: 18px 38px; }
+
+.sale-section { padding: 34px 0; border-bottom: 1px solid var(--border); }
+.sale-section h2 { font-size: 1.4rem; margin: 0 0 16px; }
+
+.pain-list, .module-list { padding-left: 22px; }
+.pain-list li, .module-list li { margin-bottom: 12px; }
+
+.credibility { text-align: center; }
+.stat-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+.stat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 22px;
+  min-width: 140px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.stat .num {
+  display: block;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.bonus ul { padding-left: 22px; }
+.bonus li { margin-bottom: 10px; }
+
+/* Hộp giá */
+.price-section { text-align: center; }
+.price-box {
+  background: #2b2420;
+  color: #fff;
+  border-radius: 16px;
+  padding: 32px 24px;
+  max-width: 440px;
+  margin: 0 auto;
+}
+.price-label { margin: 0 0 6px; color: #d8cec3; font-size: 0.9rem; text-transform: uppercase; letter-spacing: .05em; }
+.price-old { margin: 0; text-decoration: line-through; color: #a99f93; font-size: 1.1rem; }
+.price-now { margin: 4px 0 4px; font-size: 2.6rem; font-weight: 800; color: #f0c419; line-height: 1; }
+.price-note { margin: 0 0 22px; font-size: 0.85rem; color: #d8cec3; }
+.pay-methods { margin: 16px 0 0; font-size: 0.82rem; color: #d8cec3; }
+
+.after-pay {
+  background: #fff3ee;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  padding: 18px 22px;
+  margin: 28px auto 0;
+  max-width: 620px;
+  text-align: left;
+}
+.after-pay h3 { margin: 0 0 10px; font-size: 1.05rem; }
+.after-pay ol { padding-left: 20px; margin: 0; }
+.after-pay li { margin-bottom: 8px; }
+
+.guarantee {
+  background: #eef7ee;
+  border: 1px dashed #7bb07b;
+  border-radius: 12px;
+  padding: 18px 22px;
+  text-align: center;
+}
+
+.faq .q { font-weight: 700; margin: 18px 0 4px; }
+.faq .a { margin: 0; color: var(--muted); }
+
+.final-cta { text-align: center; border-bottom: none; }
+.final-cta h2 { font-size: 1.5rem; }
+
+@media (max-width: 560px) {
+  .sale-hero h1 { font-size: 1.55rem; }
+  .price-now { font-size: 2.1rem; }
+}
 article.about blockquote {
   border-left: 3px solid var(--accent);
   margin: 28px 0;

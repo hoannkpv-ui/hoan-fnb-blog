@@ -130,6 +130,24 @@ footer.site {
 }
 
 /* --- Trang giới thiệu (About) --- */
+.anh-chan-dung {
+  margin: 28px 0;
+  text-align: center;
+}
+.anh-chan-dung img {
+  width: 100%;
+  max-width: 560px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+.anh-chan-dung figcaption {
+  margin-top: 10px;
+  font-size: 0.88rem;
+  color: var(--muted);
+  font-style: italic;
+}
 article.about ul {
   padding-left: 20px;
   margin: 18px 0;

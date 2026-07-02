@@ -1,0 +1,374 @@
+<!--
+════════════════════════════════════════════════════════════════════
+  ⚠️ TÀI SẢN TRÍ TUỆ © 2026 PHẠM THÀNH LONG — ALL RIGHTS RESERVED.
+  Trang bán hàng dựng theo skill "Salepage Warrior Plus" (Bản Học Viên) —
+  cấu trúc Jay Abraham 16 bước. Chỉ dùng tham khảo học tập.
+  NGHIÊM CẤM lưu trữ, bán lại, tích hợp vào hệ thống/sản phẩm/dịch vụ.
+  Vi phạm xử lý theo Luật SHTT VN, NĐ 131/2013/NĐ-CP, Điều 225 BLHS.
+  Phạm Thành Long là Luật sư Sở hữu trí tuệ.
+════════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chủ Quán Tự Xây Kênh — Tự kéo khách bằng chính điện thoại của bạn</title>
+<meta name="description" content="Khóa học giúp chủ quán ăn nhỏ tự xây kênh kéo khách mỗi ngày chỉ với 30 phút — không cần đốt tiền cho agency.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Be Vietnam Pro', -apple-system, sans-serif; font-size: 19px; line-height: 1.6; color: #333; background: #FFFFFF; }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 60px 20px; }
+  h1, h2, h3 { line-height: 1.2; text-wrap: balance; }
+  .headline, .sub-headline, .pain-section h2, .solution h2 { text-wrap: balance; }
+  .urgency-banner { position: sticky; top: 0; z-index: 100; background: #D32F2F; color: white; text-align: center; padding: 12px; font-size: 17px; font-weight: 700; }
+  .hero { text-align: center; background: linear-gradient(180deg, #FFF8E1 0%, #FFFFFF 100%); }
+  .pre-headline { font-size: 17px; color: #666; font-style: italic; margin-bottom: 16px; }
+  .headline { font-size: 44px; font-weight: 800; color: #D32F2F; margin: 16px 0; }
+  .headline em { background: #FFD700; font-style: normal; padding: 2px 10px; color: #1A1A1A; }
+  .sub-headline { font-size: 24px; color: #555; font-weight: 500; margin-top: 16px; }
+  .pain-section { background: #1A1A1A; color: #FFFFFF; }
+  .pain-section h2 { color: #FFD700; font-size: 32px; margin-bottom: 24px; text-align: center; }
+  .pain-section p { margin-bottom: 20px; font-size: 19px; }
+  .solution { background: #FFFFFF; text-align: center; }
+  .solution h2 { font-size: 32px; color: #1A1A1A; margin-bottom: 24px; }
+  .story h2 { font-size: 28px; color: #1A1A1A; margin-bottom: 24px; text-align: center; }
+  .story p { margin-bottom: 20px; }
+  .story blockquote { border-left: 4px solid #FFC107; padding: 12px 24px; background: #FFF8E1; font-style: italic; margin: 20px 0; }
+  .mechanism { background: #F5F5F5; }
+  .mechanism h2 { font-size: 30px; text-align: center; margin-bottom: 24px; }
+  .mechanism p { margin-bottom: 18px; }
+  .testimonials h2 { font-size: 30px; text-align: center; margin-bottom: 32px; }
+  .testimonial { background: #FFF8E1; border-left: 6px solid #FFC107; padding: 24px; margin: 16px 0; display: flex; gap: 20px; }
+  .testimonial-avatar { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; flex-shrink: 0; background: #DDD; }
+  .testimonial h4 { color: #D32F2F; font-size: 18px; margin-bottom: 8px; }
+  .testimonial .result { font-size: 16px; color: #555; margin-bottom: 12px; }
+  .testimonial blockquote { font-style: italic; color: #1A1A1A; }
+  .benefits { background: #FFFFFF; }
+  .benefits h2 { font-size: 32px; text-align: center; margin-bottom: 32px; color: #1A1A1A; }
+  .benefits ul { list-style: none; }
+  .benefits li { padding: 14px 0 14px 40px; position: relative; font-size: 19px; border-bottom: 1px solid #F0F0F0; }
+  .benefits li::before { content: "✓"; position: absolute; left: 0; top: 12px; color: #388E3C; font-weight: 800; font-size: 26px; }
+  .product-detail { background: #FFF8E1; }
+  .product-detail h2 { font-size: 30px; text-align: center; margin-bottom: 32px; }
+  .module { background: white; border-radius: 8px; padding: 20px; margin-bottom: 16px; border-left: 4px solid #D32F2F; }
+  .module h3 { color: #D32F2F; font-size: 22px; margin-bottom: 8px; }
+  .bonuses { background: #FFFFFF; }
+  .bonuses h2 { font-size: 32px; text-align: center; margin-bottom: 32px; color: #1A1A1A; }
+  .bonus { background: #FFF8E1; border: 3px dashed #FFC107; border-radius: 12px; padding: 24px; margin: 16px 0; }
+  .bonus-tag { display: inline-block; background: #D32F2F; color: white; padding: 6px 16px; border-radius: 4px; font-weight: 700; margin-bottom: 12px; }
+  .bonus h3 { color: #1A1A1A; font-size: 22px; margin-bottom: 8px; }
+  .price-line { margin-top: 12px; font-size: 18px; }
+  .strike { text-decoration: line-through; color: #999; }
+  .free { color: #D32F2F; font-weight: 800; font-size: 20px; margin-left: 12px; }
+  .value-stack-section { background: #F5F5F5; }
+  .value-stack-section h2 { font-size: 30px; text-align: center; margin-bottom: 24px; }
+  .value-stack { width: 100%; border-collapse: collapse; font-size: 19px; background: white; border-radius: 8px; overflow: hidden; }
+  .value-stack td { padding: 16px; border-bottom: 1px solid #E0E0E0; }
+  .value-stack .amount { text-align: right; font-weight: 700; }
+  .value-stack .total { background: #1A1A1A; color: white; }
+  .value-stack .total td { font-size: 22px; font-weight: 800; }
+  .value-stack .today { background: #FFD700; }
+  .value-stack .today td { font-size: 28px; font-weight: 800; color: #D32F2F; }
+  .saving { background: #FFE0B2; }
+  .saving td { font-size: 18px; font-weight: 700; color: #1A1A1A; }
+  .guarantee-section { background: #FFFFFF; text-align: center; }
+  .badge { width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(#FFD700, #FFC107); border: 6px solid #D32F2F; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); transform: rotate(-8deg); }
+  .badge-inner { text-align: center; color: #D32F2F; font-weight: 800; font-size: 22px; transform: rotate(8deg); }
+  .guarantee-section h2 { font-size: 28px; margin-bottom: 16px; }
+  .guarantee-section p { max-width: 600px; margin: 0 auto; font-size: 18px; }
+  .countdown-wrapper { text-align: center; padding: 24px; background: #1A1A1A; color: white; }
+  .countdown-wrapper p { font-size: 20px; font-weight: 700; margin-bottom: 12px; color: #FFD700; }
+  .countdown { display: flex; justify-content: center; gap: 12px; }
+  .countdown > div { background: #D32F2F; color: #FFD700; padding: 16px; border-radius: 8px; min-width: 80px; text-align: center; }
+  .countdown span { font-size: 36px; font-weight: 800; display: block; }
+  .countdown label { font-size: 12px; letter-spacing: 1px; }
+  .cta-button { display: block; background: #FFD700; color: #D32F2F; font-size: 26px; font-weight: 800; text-align: center; padding: 24px 32px; border: 4px solid #1A1A1A; border-radius: 12px; text-decoration: none; margin: 32px auto; max-width: 600px; box-shadow: 0 6px 16px rgba(211, 47, 47, 0.4); animation: pulse 1.8s infinite; transition: transform 0.2s; text-transform: uppercase; }
+  .cta-button:hover { transform: translateY(-3px); background: #FFC107; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.02); } }
+  .cta-subtext { text-align: center; font-size: 15px; color: #666; margin-top: -16px; margin-bottom: 32px; }
+  .faq { background: #F5F5F5; }
+  .faq h2 { font-size: 30px; text-align: center; margin-bottom: 32px; }
+  .faq-item { background: white; padding: 20px; margin-bottom: 12px; border-radius: 8px; border-left: 4px solid #FFC107; }
+  .faq-item h3 { color: #D32F2F; font-size: 19px; margin-bottom: 8px; }
+  .ps-section { background: #FFF8E1; }
+  .ps-section h2 { color: #D32F2F; font-size: 26px; margin-bottom: 24px; text-align: center; }
+  .ps-section p { margin-bottom: 20px; }
+  .ps-section strong { color: #D32F2F; }
+  footer { background: #1A1A1A; color: #999; text-align: center; padding: 40px 20px; font-size: 14px; }
+  footer a { color: #FFD700; text-decoration: none; }
+  @media (max-width: 768px) {
+    .headline { font-size: 30px; }
+    .sub-headline { font-size: 19px; }
+    body { font-size: 17px; }
+    section { padding: 40px 16px; }
+    h2 { font-size: 24px !important; }
+    .cta-button { font-size: 19px; padding: 18px 20px; }
+    .countdown > div { min-width: 60px; padding: 10px; }
+    .countdown span { font-size: 24px; }
+    .testimonial { flex-direction: column; text-align: center; }
+    .testimonial-avatar { margin: 0 auto; }
+    .value-stack td { padding: 12px 8px; font-size: 16px; }
+    .value-stack .today td { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ URGENCY BANNER ============ -->
+<div class="urgency-banner">
+  ⏰ ƯU ĐÃI GIÁ 599.000đ KẾT THÚC SAU: <span id="banner-countdown">--:--:--</span>
+</div>
+
+<!-- ============ BƯỚC 1+2+3: HERO ============ -->
+<section class="hero">
+  <div class="container">
+    <p class="pre-headline">Dành riêng cho anh/chị chủ quán ăn nhỏ đang đổ tiền thuê marketing mà quán vẫn vắng khách...</p>
+    <h1 class="headline">Tự Tay Xây Kênh Kéo Khách Về Quán<br><em>Chỉ 30 Phút Mỗi Ngày</em></h1>
+    <p class="sub-headline">Bằng chính chiếc điện thoại đang cầm — không cần đốt tiền cho agency, ngay cả khi anh/chị chưa từng làm nội dung và không rành công nghệ.</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 4: PAIN SECTION ============ -->
+<section class="pain-section">
+  <div class="container">
+    <h2>Anh/Chị có đang ở trong tình cảnh này?</h2>
+    <p>Anh/chị mở quán bằng cả vốn liếng và giấc mơ. Món ăn ngon, giá hợp lý, phục vụ tử tế. Nhưng bàn vẫn trống. Anh/chị thuê một đơn vị marketing — họ hứa hẹn, chạy quảng cáo vài tuần, đơn có nhấp nhổm rồi tắt ngấm. Đổi sang đơn vị thứ hai. Rồi thứ ba. Tiền ra đều đặn mỗi tháng, còn khách thì không.</p>
+    <p>Nếu cứ tiếp tục thế này: tháng sau anh/chị lại mất thêm một khoản phí marketing nữa. Vài tháng nữa, tiền thuê mặt bằng vẫn phải trả trong khi doanh thu giậm chân. Và đến một ngày, anh/chị ngồi nhìn quán vắng, tự hỏi có nên đóng cửa hay không — đúng cái cảm giác chơi vơi mà rất nhiều chủ quán đã nếm trải.</p>
+    <p>Hầu hết chủ quán nghĩ vấn đề là "chưa thuê được đơn vị marketing đủ giỏi". Sai. Vấn đề thật sự là: anh/chị đang <strong>giao cần câu cơm của quán mình vào tay người ngoài</strong> — những người không đứng trong bếp, không hiểu món, không yêu quán bằng chính anh/chị. Không ai kể câu chuyện quán của anh/chị hay bằng anh/chị. Thứ anh/chị cần không phải là thuê thêm một đơn vị nữa — mà là <strong>tự chủ được cái kênh của chính mình</strong>.</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 5: GIẢI PHÁP ============ -->
+<section class="solution">
+  <div class="container">
+    <h2>Đó là lý do tôi tạo ra...</h2>
+    <h1 class="headline" style="font-size:38px;">CHỦ QUÁN TỰ XÂY KÊNH</h1>
+    <p class="sub-headline">Khóa học cầm tay chỉ việc giúp anh/chị tự dựng và vận hành một kênh kéo khách đều đặn cho quán — không phụ thuộc bất kỳ agency nào.</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 6: ORIGIN STORY ============ -->
+<section class="story">
+  <div class="container">
+    <h2>Vì sao tôi làm khóa học này?</h2>
+    <p>Tôi là Nguyễn Kim Hoàn — anh em hay gọi là Jin. Hơn 10 năm qua tôi lăn lộn trong ngành F&amp;B với 6 mô hình khác nhau: từ quán bia hơi, cà phê, nướng lẩu, nhà hàng bia tươi, cho tới nhà hàng ẩm thực Thái Lan hiện tại. Có quán phát đạt. Có quán tôi phải sang nhượng chịu lỗ. Có giai đoạn tôi gánh khoản nợ lớn và gần như gục ngã.</p>
+    <p>Cú đau nhất đến khi tôi mở nhà hàng Thái. Quán vắng khách, tôi lao đi tìm marketing thuê ngoài. Tôi đổi tới 2–3 đơn vị marketing khác nhau. Tiền mất, mà quán vẫn không đông lên. Tôi hoang mang, chơi vơi, buồn bã — nhiều đêm không biết mình còn trụ được bao lâu.</p>
+    <blockquote>"Không ai kể câu chuyện quán của mình hay bằng chính mình. Ngày tôi ngừng chờ người khác cứu quán và tự cầm điện thoại lên làm, mọi thứ mới bắt đầu đổi khác."</blockquote>
+    <p>Tôi quyết định gỡ bỏ cả cái biển thương hiệu cũ, tự xây thương hiệu riêng: <strong>Samita Thái</strong>. Tôi tự học cách làm nội dung, tự quay, tự chụp món ăn, tự lên bài. Không hoàn hảo, nhưng là của tôi — và tôi kiên trì làm mỗi ngày.</p>
+    <p>Tôi từng như bạn: đứng trước camera là nói vấp, máy rung lắc, clip lẹt đẹt vài chục view đầy nản lòng. Nhưng bước ngoặt đến khi tôi nhận ra camera chính là "đôi mắt" của khách hàng. Thay vì thuê ngoài làm màu, tôi tự cầm điện thoại quay lại toàn bộ "ruột gan" của quán: từ lúc săn nguyên liệu chuẩn vị, bếp trưởng tỉ mẩn canh lửa, đến cả những buổi họp nội bộ để tối ưu dịch vụ. Khi sự minh bạch lên ngôi, khách hàng tự tìm đến giúp bàn luôn kín chỗ, shipper xếp hàng dài cùng doanh thu và lượt theo dõi nhảy vọt liên tục từ đầu năm 2026. Làm thật, quay thật thì kết quả thật — tôi đã đóng gói trọn vẹn công thức "vượt ngại" này vào khóa học để giúp bạn tự xây kênh bứt phá doanh thu mà không cần ê-kíp đắt đỏ!</p>
+    <p>Sau tất cả, tôi nhận ra: rất nhiều chủ quán nhỏ đang mắc kẹt đúng chỗ tôi từng mắc kẹt — đổ tiền cho marketing thuê ngoài trong khi thứ họ cần là tự làm chủ cái kênh của mình. Tôi đóng gói toàn bộ những gì tôi đã tự mò ra thành khóa <strong>Chủ Quán Tự Xây Kênh</strong>, để anh/chị không phải trả giá đắt và mất nhiều năm như tôi.</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 7: CƠ CHẾ HOẠT ĐỘNG ============ -->
+<section class="mechanism">
+  <div class="container">
+    <h2>Tại sao cách này hiệu quả với quán nhỏ?</h2>
+    <p><strong>Bí mật nằm ở chỗ:</strong> khách đói không tìm đến "quảng cáo hay" — họ bị kéo đến bởi <strong>hình ảnh món ăn khiến họ thèm</strong> và <strong>cảm giác tin tưởng một quán thật, người thật</strong>. Cả hai thứ đó, chính anh/chị — người đứng trong bếp — làm ra tốt hơn bất kỳ agency nào.</p>
+    <p>Khi anh/chị tự chủ kênh: mỗi món mới, mỗi khung giờ đông, mỗi câu chuyện nhỏ trong quán đều lên bài ngay trong ngày — thứ mà đơn vị thuê ngoài luôn làm chậm và làm hời hợt. Nội dung đều đặn + thật + đúng món ngon = khách nhớ tới quán, và quay lại.</p>
+    <p>Khóa học biến việc đó thành một quy trình <strong>30 phút mỗi ngày</strong> có thể lặp lại — không cần năng khiếu, không cần máy móc đắt tiền, chỉ cần chiếc điện thoại anh/chị đang có.</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 8: TESTIMONIALS ============ -->
+<section class="testimonials">
+  <div class="container">
+    <h2>Chủ quán khác nói gì?</h2>
+    <div class="testimonial">
+      <img src="anh/testimonial-thinh.jpg" alt="Anh Thịnh - chủ quán Hải Sản" class="testimonial-avatar">
+      <div>
+        <h4>Anh Thịnh — Chủ quán Hải Sản</h4>
+        <p class="result"><strong>Trước:</strong> Doanh thu chững lại ở mức 600 triệu/tháng, mọi khâu chăm sóc khách hàng đều làm thủ công. · <strong>Sau:</strong> Bứt phá mốc doanh thu 1 tỷ/tháng, chuẩn hóa được hệ thống quản lý và tự động hóa.</p>
+        <blockquote>"Mình thực sự rất biết ơn những kiến thức thực chiến từ khóa học. Trước đây làm mọi thứ khá bản năng, quản lý khách hàng hay lên chiến dịch đều lộn xộn và tốn thời gian. Sau khi học, mình biết cách áp dụng quy trình rõ ràng, kết hợp nhuần nhuyễn các công cụ để bám đuổi khách hàng. Doanh thu bật lên thấy rõ mà mình lại có nhiều thời gian rảnh hơn để tập trung vào chiến lược. Khóa học thực sự rất đáng giá!"</blockquote>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="anh/testimonial-hanh.jpg" alt="Chị Hạnh - chủ quán Thái" class="testimonial-avatar">
+      <div>
+        <h4>Chị Hạnh — Chủ quán Thái</h4>
+        <p class="result"><strong>Trước:</strong> Chi phí nguyên vật liệu (Food Cost) mất kiểm soát, nhân sự làm việc rời rạc, thiếu động lực. · <strong>Sau:</strong> Ép Food Cost xuống dưới mức 38%, xây dựng thành công hệ thống KPI và chính sách thưởng nóng.</p>
+        <blockquote>"Bài toán chi phí và nhân sự luôn làm mình đau đầu nhất khi mở quán. Nhờ khóa học, mình đã biết cách siết chặt chi phí nguyên liệu ngay từ khâu nhập hàng. Quan trọng nhất là thiết lập được bộ KPI cực kỳ chi tiết cho từng vị trí, từ bếp trưởng cho đến Giám sát nhân viên bàn. Đội ngũ giờ làm việc rất máu lửa vì có chính sách thưởng hiệu suất minh bạch. Cảm ơn giảng viên rất nhiều!"</blockquote>
+      </div>
+    </div>
+    <div class="testimonial">
+      <img src="anh/testimonial-long.jpg" alt="Em Long - nhà hàng bia tươi" class="testimonial-avatar">
+      <div>
+        <h4>Em Long — Nhà hàng bia tươi</h4>
+        <p class="result"><strong>Trước:</strong> Bế tắc khi tìm cách kéo khách vào các tháng thấp điểm, chạy marketing đốt tiền nhưng kém hiệu quả. · <strong>Sau:</strong> Sở hữu bộ lịch trình khuyến mãi bài bản, duy trì lượng đơn ổn định ngay cả trong mùa vắng khách.</p>
+        <blockquote>"Những kiến thức về lên kế hoạch marketing trong khóa học áp dụng vào thực tế cực kỳ 'bén'. Đợt thấp điểm vừa rồi, nhờ bám sát đúng lịch trình chiến dịch đã được học, kết hợp tối ưu lại các kênh tương tác trực tiếp với khách, lượng đơn của quán không những không giảm mà tỷ lệ khách cũ quay lại còn tăng. Một khóa học không có lý thuyết suông, rặt thực chiến!"</blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 9: BENEFITS BULLETS ============ -->
+<section class="benefits">
+  <div class="container">
+    <h2>Sau khóa học, anh/chị sẽ biết:</h2>
+    <ul>
+      <li>Cách chọn đúng 1 kênh chủ lực hợp với quán của anh/chị — thay vì ôm đồm 5 nền tảng rồi bỏ bê tất cả.</li>
+      <li>Quy trình quay – chụp món ăn "bốc khói, chảy nước miếng" chỉ bằng điện thoại — không cần thợ ảnh.</li>
+      <li>Lý do vì sao thuê agency mà quán vẫn vắng — và điều anh/chị phải tự nắm lại trong tay.</li>
+      <li>Công thức viết caption khiến người xem muốn đến ăn ngay tối nay, không lướt qua.</li>
+      <li>Lịch nội dung 30 ngày điền sẵn — mỗi sáng mở ra là biết hôm nay đăng gì, không còn bí ý tưởng.</li>
+      <li>Cách gói một chương trình ưu đãi kéo khách kín bàn vào khung giờ vắng.</li>
+      <li>Bí quyết lên một bài hoàn chỉnh trong 30 phút — kể cả khi anh/chị bận chạy quán cả ngày.</li>
+      <li>Cách đọc vài chỉ số đơn giản để biết bài nào ra khách, bài nào bỏ — không cần rành kỹ thuật.</li>
+      <li>Khi nào NÊN thuê ngoài và cách thuê đúng để không bị "hớ" một lần nữa.</li>
+      <li>Cách biến khách quen thành người kể chuyện cho quán — marketing gần như miễn phí.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ CTA #1 ============ -->
+<div class="container">
+  <a href="[LINK_MUA]" class="cta-button">TÔI MUỐN TỰ KÉO KHÁCH CHO QUÁN — ĐĂNG KÝ 599.000đ</a>
+  <p class="cta-subtext">🔒 Thanh toán an toàn · ⚡ Truy cập ngay sau thanh toán · 💯 Hoàn tiền 7 ngày</p>
+</div>
+
+<!-- ============ BƯỚC 10: PRODUCT DETAIL ============ -->
+<section class="product-detail">
+  <div class="container">
+    <h2>Trong khóa "Chủ Quán Tự Xây Kênh" có gì?</h2>
+    <div class="module"><h3>Module 1 — Vì sao chủ quán phải tự chủ kênh</h3><p>Tư duy nền tảng và bài học thật từ hành trình của tôi: vì sao thuê ngoài thất bại và tự làm lại thắng.</p></div>
+    <div class="module"><h3>Module 2 — Chọn 1 kênh chủ lực hợp quán bạn</h3><p>Facebook hay TikTok? Cách chọn đúng theo loại quán và loại khách của anh/chị.</p></div>
+    <div class="module"><h3>Module 3 — Tự quay – chụp món ăn bằng điện thoại</h3><p>Toàn bộ quy trình ánh sáng, góc máy, set-up món để hình ảnh "thèm ngay lập tức".</p></div>
+    <div class="module"><h3>Module 4 — Lịch nội dung 30 ngày &amp; lên bài trong 30 phút</h3><p>Khung nội dung điền sẵn + quy trình sản xuất nhanh cho người bận.</p></div>
+    <div class="module"><h3>Module 5 — Viết caption bán hàng</h3><p>Công thức câu chữ khiến người xem muốn đến ăn, không chỉ thả tim rồi lướt.</p></div>
+    <div class="module"><h3>Module 6 — Chạy ưu đãi kéo khách kín bàn</h3><p>Thiết kế khuyến mãi đúng cách để lấp khung giờ vắng mà không phá giá.</p></div>
+    <div class="module"><h3>Module 7 — Đo lường đơn giản &amp; tối ưu</h3><p>Vài chỉ số cần nhìn để biết nội dung nào thật sự ra khách.</p></div>
+    <div class="module"><h3>Module 8 — Khi nào &amp; cách thuê ngoài đúng</h3><p>Sau khi đã tự chủ, cách phối hợp thuê ngoài mà không bị phụ thuộc, không bị hớ.</p></div>
+    <p style="text-align:center; color:#666; font-style:italic;">Hình thức: học online, xem trọn đời. <em>[Anh Jin xác nhận: số video/giờ học, tài liệu kèm — CHỜ BỔ SUNG]</em></p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 11: BONUSES ============ -->
+<section class="bonuses">
+  <div class="container">
+    <h2>🎁 Tặng kèm khi đăng ký hôm nay</h2>
+    <div class="bonus">
+      <div class="bonus-tag">🎁 QUÀ TẶNG ĐỘC QUYỀN</div>
+      <h3>Checklist toàn bộ quy trình tự quay – chụp món ăn</h3>
+      <p>Bản in ra dán bếp: từ ánh sáng, góc máy đến danh sách shot bắt buộc cho mỗi món — làm theo là có ngay hình ảnh khiến khách thèm.</p>
+      <div class="price-line"><span class="strike">Giá bán riêng: 200.000đ</span><span class="free">HÔM NAY: MIỄN PHÍ</span></div>
+    </div>
+    <p style="text-align:center; color:#888; font-style:italic; margin-top:12px;">* Giá quy đổi quà tặng là mức đề xuất — anh Jin điều chỉnh theo ý mình.</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 12: VALUE STACK ============ -->
+<section class="value-stack-section">
+  <div class="container">
+    <h2>Tổng giá trị anh/chị nhận được:</h2>
+    <table class="value-stack">
+      <tr><td>Khóa học chính "Chủ Quán Tự Xây Kênh" (8 module)</td><td class="amount">1.599.000đ</td></tr>
+      <tr><td>Quà tặng: Checklist quay – chụp món ăn</td><td class="amount">200.000đ</td></tr>
+      <tr class="total"><td>TỔNG GIÁ TRỊ</td><td class="amount">1.799.000đ</td></tr>
+      <tr class="today"><td>HÔM NAY CHỈ:</td><td class="amount">599.000đ</td></tr>
+      <tr class="saving"><td>TIẾT KIỆM:</td><td class="amount">1.200.000đ (67%)</td></tr>
+    </table>
+    <p style="text-align:center; color:#888; font-style:italic; margin-top:12px;">* Giá gốc &amp; giá trị bonus là mức đề xuất để neo giá — anh Jin chốt lại con số cuối.</p>
+  </div>
+</section>
+
+<!-- ============ COUNTDOWN ============ -->
+<div class="countdown-wrapper">
+  <p>⏰ ƯU ĐÃI GIÁ 599.000đ KẾT THÚC SAU:</p>
+  <div class="countdown">
+    <div><span id="hours">23</span><label>GIỜ</label></div>
+    <div><span id="minutes">59</span><label>PHÚT</label></div>
+    <div><span id="seconds">59</span><label>GIÂY</label></div>
+  </div>
+</div>
+
+<!-- ============ CTA #2 ============ -->
+<div class="container">
+  <a href="[LINK_MUA]" class="cta-button">TÔI MUỐN TỰ KÉO KHÁCH CHO QUÁN — ĐĂNG KÝ 599.000đ</a>
+  <p class="cta-subtext">🔒 Thanh toán an toàn · ⚡ Truy cập ngay sau thanh toán · 💯 Hoàn tiền 7 ngày</p>
+</div>
+
+<!-- ============ BƯỚC 13: GUARANTEE ============ -->
+<section class="guarantee-section">
+  <div class="container">
+    <div class="badge"><div class="badge-inner">100%<br><strong>HOÀN TIỀN</strong><br>7 NGÀY</div></div>
+    <h2>Cam kết hoàn tiền 7 ngày — không hỏi lý do</h2>
+    <p>Trong 7 ngày kể từ khi mua, nếu vì bất kỳ lý do gì anh/chị thấy khóa học không phù hợp, chỉ cần nhắn một tin — tôi hoàn 100% học phí, không hỏi, không gây khó. Rủi ro thuộc về tôi, không phải anh/chị.</p>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="faq">
+  <div class="container">
+    <h2>Câu hỏi thường gặp</h2>
+    <div class="faq-item"><h3>Tôi bận chạy quán cả ngày, có thời gian làm không?</h3><p>Toàn bộ khóa thiết kế quanh quy trình 30 phút/ngày. Anh/chị làm được vào lúc quán vắng hoặc buổi tối.</p></div>
+    <div class="faq-item"><h3>Tôi không rành công nghệ, quay chụp kém thì sao?</h3><p>Khóa bắt đầu từ số 0, chỉ dùng điện thoại. Module 3 cầm tay từng bước quay – chụp, kèm checklist làm theo.</p></div>
+    <div class="faq-item"><h3>Bao lâu thì thấy khách?</h3><p>Không hứa "giàu sau một đêm". Đây là việc làm đều đặn. Tôi chia sẻ đúng quy trình mình đã dùng để Samita Thái tăng trưởng lại — kết quả tùy vào việc anh/chị làm đều tới đâu.</p></div>
+    <div class="faq-item"><h3>Học xong có được hỏi thêm không?</h3><p>Có. Anh/chị vào nhóm kín để hỏi đáp và được góp ý bài đăng thật của quán mình.</p></div>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 14+15: SCARCITY + CTA #3 ============ -->
+<section style="background:#FFF8E1; text-align:center;">
+  <div class="container">
+    <h2 style="font-size:30px; color:#D32F2F;">⚠ Giá ưu đãi 599.000đ có thời hạn</h2>
+    <p style="font-size:19px; margin: 16px 0;">Sau khi hết ưu đãi, học phí sẽ trở về mức gốc <strong>1.599.000đ</strong> và quà tặng Checklist quay – chụp có thể không còn tặng kèm.</p>
+    <a href="[LINK_MUA]" class="cta-button">GIỮ GIÁ 599.000đ CHO TÔI — ĐĂNG KÝ NGAY</a>
+    <p class="cta-subtext">🔒 Thanh toán an toàn · ⚡ Truy cập ngay · 💯 Hoàn tiền 7 ngày</p>
+  </div>
+</section>
+
+<!-- ============ BƯỚC 16: P.S. ============ -->
+<section class="ps-section">
+  <div class="container">
+    <h2>Vài lời cuối từ tôi...</h2>
+    <p><strong>P.S.</strong> Nhớ rằng: không ai kể câu chuyện quán của anh/chị hay bằng chính anh/chị. Khóa này trao lại cho anh/chị quyền tự chủ đó — và anh/chị có 7 ngày hoàn tiền để thử mà không mất gì.</p>
+    <p><strong>P.P.S.</strong> Quà tặng Checklist toàn bộ quy trình tự quay – chụp món ăn (trị giá 200.000đ) đang được tặng kèm trong đợt ưu đãi này. Khi giá trở về 1.599.000đ, phần quà này có thể không còn.</p>
+    <p><strong>P.P.P.S.</strong> Mỗi ngày trôi qua mà quán vẫn trông chờ vào marketing thuê ngoài là thêm một ngày anh/chị mất tiền và mất khách. Tôi đã mất vài năm và không ít tiền mới hiểu ra điều này. Anh/chị không cần đi lại con đường đó. Bấm nút bên trên và bắt đầu tự chủ ngay hôm nay.</p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p>© 2026 Nguyễn Kim Hoàn (Jin) · Nhà hàng Samita Thái, Linh Đàm, Hà Nội</p>
+  <p>Hotline / Zalo: <a href="tel:[SDT]">[SĐT]</a> · Email: <a href="mailto:ipshoannk26@gmail.com">ipshoannk26@gmail.com</a></p>
+</footer>
+
+<!-- ============ COUNTDOWN SCRIPT ============ -->
+<script>
+// ĐỒNG HỒ ƯU ĐÃI: đếm ngược trong vòng 24 giờ, chạm 0 thì GIẬT VỀ 23h59 (reset mỗi ngày).
+// Mốc reset = 00:00 mỗi ngày theo giờ máy khách. Muốn reset theo mốc khác, sửa hàm nextReset().
+function nextReset() {
+  const now = new Date();
+  const r = new Date(now);
+  r.setHours(24, 0, 0, 0); // nửa đêm kế tiếp
+  return r.getTime();
+}
+function updateCountdown() {
+  const distance = nextReset() - Date.now();
+  const hours = Math.floor((distance % 86400000) / 3600000);
+  const minutes = Math.floor((distance % 3600000) / 60000);
+  const seconds = Math.floor((distance % 60000) / 1000);
+  const hh = String(hours).padStart(2,'0');
+  const mm = String(minutes).padStart(2,'0');
+  const ss = String(seconds).padStart(2,'0');
+  document.getElementById('hours').textContent = hh;
+  document.getElementById('minutes').textContent = mm;
+  document.getElementById('seconds').textContent = ss;
+  document.getElementById('banner-countdown').textContent = hh + 'h ' + mm + 'm ' + ss + 's';
+}
+setInterval(updateCountdown, 1000);
+updateCountdown();
+</script>
+
+<!-- ════ TEM BẢN QUYỀN BẮT BUỘC (footer banner) ════ -->
+<div style="background:#111;color:#f5c518;font-size:12px;line-height:1.5;padding:14px;text-align:center;border-top:2px solid #f5c518;font-family:sans-serif;">
+  ⚠️ TÀI SẢN TRÍ TUỆ © 2026 PHẠM THÀNH LONG — Trang bán hàng dựng theo skill "Salepage Warrior Plus" (Bản Học Viên). Chỉ tham khảo học tập.
+  Nghiêm cấm lưu trữ, bán lại, tích hợp hệ thống. Vi phạm bị xử lý theo Luật SHTT Việt Nam,
+  Nghị định 131/2013/NĐ-CP và Điều 225 Bộ luật Hình sự. Phạm Thành Long là Luật sư Sở hữu trí tuệ.
+</div>
+</body>
+</html>
